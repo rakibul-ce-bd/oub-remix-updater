@@ -18,12 +18,12 @@ read fork
 echo " "
 
 if [[ "${fork}" == 'y' ]]; then
-	git clone https://github.com/${userName}/${repo}
+	git clone https://github.com/${username}/${repo}
 	cd ${repo}
 elif [[ "${fork}" == 'n' ]]; then
 	echo -n "Enter your repo name: "
 	read repo
-	git clone https://github.com/${userName}/${repo}
+	git clone https://github.com/${username}/${repo}
 	cd ${repo}
 else
         echo " "
