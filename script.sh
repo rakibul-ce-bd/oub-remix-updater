@@ -1,4 +1,4 @@
-#Update script of oub-remix by @marshmello61
+#Update Script of oub-remix by @marshmello61
 #Modified by @rakibul-ce-bd
 
 
@@ -7,17 +7,17 @@ rm -rf ${repo}
 
 echo "You're running the OpenUserBot Remix Updater script"
 echo " "
-# Get username of user
+# Get Username of User
 echo -n "Enter your GitHub username: "
 read username
 echo " "
 
 # Check if user has forked or has the same repo name
-echo -n "Have you forked oub-remix from @sahyam2019 or has the same repo name i.e. oub-remix? [y/n]: "
+echo -n "Have you forked oub-remix from @sahyam2019 or has the same repo name i.e. oub-remix? [Y/n]: "
 read fork
 echo " "
 
-if [[ "${fork}" == 'y' ]]; then
+if [[ "${fork}" == 'Y' ]]; then
 	git clone https://github.com/${username}/${repo}
 	cd ${repo}
 elif [[ "${fork}" == 'n' ]]; then
@@ -27,7 +27,7 @@ elif [[ "${fork}" == 'n' ]]; then
 	cd ${repo}
 else
         echo " "
-        echo "You were only supposed to enter y or n"
+        echo "You were only supposed to enter Y or n"
         exit 1
 fi
 
